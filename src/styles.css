@@ -148,3 +148,54 @@
     color: var(--color-foreground);
   }
 }
+
+@utility bg-primary-gradient {
+  background-image: var(--primary-gradient);
+}
+@utility bg-secondary-gradient {
+  background-image: var(--secondary-gradient);
+}
+@utility bg-hero-gradient {
+  background-image: var(--hero-gradient);
+}
+@utility bg-surface-gradient {
+  background-image: var(--surface-gradient);
+}
+@utility shadow-custom-lg {
+  box-shadow: var(--shadow-custom-lg);
+}
+@utility shadow-custom-xl {
+  box-shadow: var(--shadow-custom-xl);
+}
+@utility animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@utility animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
