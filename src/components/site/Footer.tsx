@@ -8,7 +8,11 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <img src={LOGO} alt="SSM Ambiental Logo" className="h-16 w-auto brightness-0 invert" />
+            <img
+              src={LOGO}
+              alt="SSM Ambiental Logo"
+              className="h-16 w-auto rounded-md bg-background p-1"
+            />
             <p className="text-sm leading-relaxed text-background/70">
               Especializada em serviços de dedetização, desentupimento e limpeza. Qualidade
               garantida para residências, condomínios e empresas.
