@@ -1,0 +1,17 @@
+node_modules
+.git
+.github
+dist
+.output
+.nitro
+.wrangler
+.tanstack
+.vinxi
+.lovable
+.workspace
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+README.md
