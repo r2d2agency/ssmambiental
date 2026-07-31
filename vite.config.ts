@@ -7,6 +7,9 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // Fora do Lovable (ex.: build Docker/EasyPanel) defina NITRO_PRESET=node-server
+  // para gerar um servidor Node autônomo. Dentro do Lovable o preset é sempre Cloudflare.
+  ...(process.env["NITRO_PRESET"] ? { nitro: { preset: process.env["NITRO_PRESET"] } } : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
